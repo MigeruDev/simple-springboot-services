@@ -6,11 +6,11 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/edwinnm/Springboot-MS
+          uri: https://github.com/TheWorstOne/simple-springboot-services
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-          default-label: "main"
+          default-label: "fix_java11"
   security:
     user:
       name: root
