@@ -1,14 +1,18 @@
 package academy.digitallab.store.shopping.entity;
 
+
+import academy.digitallab.store.shopping.model.Product;
 import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Positive;
+import java.io.Serializable;
 
 @Entity
 @Data
 @Table(name = "tbl_invoce_items")
-public class InvoiceItem {
+public class InvoiceItem  {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,6 +27,8 @@ public class InvoiceItem {
     @Transient
     private Double subTotal;
 
+    @Transient
+    private Product product;
 
     public Double getSubTotal(){
         if (this.price >0  && this.quantity >0 ){
