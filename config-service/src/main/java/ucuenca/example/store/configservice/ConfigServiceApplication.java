@@ -1,3 +1,4 @@
+
 package ucuenca.example.store.configservice;
 
 import org.springframework.boot.SpringApplication;
