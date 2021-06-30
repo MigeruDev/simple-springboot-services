@@ -1,12 +1,12 @@
 server:
-  port: 8090
+  port: 8081
 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/TheWorstOne/simple-springboot-services.git
+          uri: https://github.com/edwinnm/Springboot-MS
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
