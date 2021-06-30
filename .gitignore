@@ -1,1 +1,5 @@
 *.key
+.idea
+.git
+.gradle
+.settings
