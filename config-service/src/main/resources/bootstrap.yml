@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/TheWorstOne/simple-springboot-services
+          uri: https://github.com/TheWorstOne/simple-springboot-services.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
